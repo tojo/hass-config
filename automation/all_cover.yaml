@@ -1,0 +1,25 @@
+- id: Alle_Rollaeden_bei_Sonnenaufgang_auf
+  alias: 'Alle Rolläden bis auf Essen bei Sonnenaufgang auf'
+  initial_state: 'on'
+  trigger:
+      platform: sun
+      event: sunrise
+  action:
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0928876   # Alle Rolläden bis auf Essen
+          channel: 1            # auf
+          param: PRESS_SHORT
+
+- id: Alle_Rollaeden_bei_Sonnenaufgang_zu
+  alias: 'Alle Rolläden bis auf Essen bei Sonnenaufgang zu'
+  initial_state: 'on'
+  trigger:
+      platform: sun
+      event: sunset
+  action:
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0928876   # Alle Rolläden bis auf Essen
+          channel: 2            # zu
+          param: PRESS_SHORT

@@ -1,0 +1,27 @@
+- id: Espresso_um_6_Uhr_werktags_an
+  alias: 'Espresso um 6:00 Uhr werktags an'
+  initial_state: 'on'
+  trigger:
+      platform: time
+      at: "06:00"
+  condition:
+      - condition: state
+        entity_id: 'binary_sensor.workday_sensor'
+        state: 'on'
+  action:
+      - service: homeassistant.turn_on
+        entity_id: group.kitchen_espresso
+
+- id: Espresso_um_8_Uhr_werktags_aus
+  alias: 'Espresso um 8:00 Uhr werktags aus'
+  initial_state: 'on'
+  trigger:
+      platform: time
+      at: "08:00"
+  condition:
+      - condition: state
+        entity_id: 'binary_sensor.workday_sensor'
+        state: 'on'
+  action:
+      - service: homeassistant.turn_off
+        entity_id: group.kitchen_espresso

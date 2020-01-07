@@ -1,0 +1,8 @@
+- id: homematic_ccu_reboot
+  alias: Homematic CCU Reboot
+  initial_state: 'on'
+  trigger:
+      platform: state
+      entity_id: sensor.v_last_reboot
+  action:
+      - service: homematic.reconnect

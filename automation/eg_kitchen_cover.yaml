@@ -1,0 +1,70 @@
+- id: Rolladen_Küche_1_um_6_30_Uhr_werktags_auf
+  alias: 'Rolladen Küche 1 werktags um 06:30 Uhr auf'
+  initial_state: 'on'
+  trigger:
+      platform: time
+      at: "06:30"
+  condition:
+      - condition: state
+        entity_id: 'binary_sensor.workday_sensor'
+        state: 'on'
+  action:
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0929605   # Rolladen Küche 1
+          channel: 1            # auf
+          param: PRESS_SHORT
+
+- id: Rolladen_Küche_1_um_23_Uhr_zu
+  alias: 'Rolladen Küche 1 um 23:00 Uhr zu'
+  initial_state: 'on'
+  trigger:
+      platform: time
+      at: "23:00"
+  action:
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0929605   # Rolladen Küche 1
+          channel: 2            # zu
+          param: PRESS_SHORT
+          
+- id: Rolladen_Küche_nach_Sonnenaufgang_auf
+  alias: 'Rolladen Küche nach Sonnenaufgang auf'
+  initial_state: 'on'
+  trigger:
+      platform: sun
+      event: sunrise
+  action:
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0929605   # Rolladen Küche 1
+          channel: 1            # auf
+          param: PRESS_SHORT
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0929605   # Rolladen Küche 2
+          channel: 3            # auf
+          param: PRESS_SHORT
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0929605   # Rolladen Küche 3
+          channel: 5            # auf
+          param: PRESS_SHORT
+
+- id: Rolladen_Küche_2_und_3_nach_Sonnenuntergang_zu
+  alias: 'Rolladen Küche nach Sonnenuntergang zu'
+  initial_state: 'on'
+  trigger:
+      platform: sun
+      event: sunset
+  action:
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0929605   # Rolladen Küche 2
+          channel: 4            # zu
+          param: PRESS_SHORT
+      - service: homematic.virtualkey
+        data:
+          address: KEQ0929605   # Rolladen Küche 3
+          channel: 6            # zu
+          param: PRESS_SHORT

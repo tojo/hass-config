@@ -1,5 +1,7 @@
 # An * ensures that everything will be ignored.
 *
+# Now, whitelist anything that's a directory
+!*/
 
 # You can whitelist files/folders with !, these will not be ignored.
 !*.yaml
