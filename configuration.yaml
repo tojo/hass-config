@@ -1,0 +1,35 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  unit_system: !secret unit_system
+  time_zone: !secret time_zone
+
+group: !include groups.yaml
+automation: !include_dir_merge_list automation/
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+homematic:
+  interfaces:
+    rf:
+      host: !secret homematic_host 192.168.178.66
+      resolvenames: json
+      username: !secret homatic_username
+      password: !secret homatic_password
+
+binary_sensor:
+  - platform: workday
+    country: !secret workday_country
+    province: !secret workday_province
+   
+sensor: 
+  - platform: template
+    sensors:
+      v_last_reboot:
+        value_template: "{{ state_attr('homematic.ccu3', 'V_Last_Reboot') or '01.01.1970 00:00:00' }}"
+        icon_template: "mdi:clock"
+        entity_id: homematic.ccu3
