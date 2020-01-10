@@ -7,7 +7,9 @@
 !*.yml
 !*.yaml
 !.gitignore
+!.gitattributes
 !*.md
+!.git-crypt
 
 # Ignore folders.
 .storage
@@ -16,5 +18,5 @@
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
-secrets.yaml
+# secrets.yaml <-- ok since successful git-crypt usage
 known_devices.yaml
