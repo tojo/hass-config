@@ -10,7 +10,7 @@
         state: 'on'
   action:
       - service: homeassistant.turn_on
-        entity_id: group.kitchen_espresso
+        entity_id: group.eg_kueche_espresso
 
 - id: Espresso_um_8_Uhr_werktags_aus
   alias: 'Espresso um 8:00 Uhr werktags aus'
@@ -24,4 +24,4 @@
         state: 'on'
   action:
       - service: homeassistant.turn_off
-        entity_id: group.kitchen_espresso
+        entity_id: group.eg_kueche_espresso
