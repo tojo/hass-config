@@ -5,6 +5,7 @@ homeassistant:
   name: Home
   latitude: !secret latitude
   longitude: !secret longitude
+  elevation: !secret elevation
   unit_system: !secret unit_system
   time_zone: !secret time_zone
 
