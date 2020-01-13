@@ -40,3 +40,13 @@ sensor:
       - ads_blocked_today
       - dns_queries_today
       - unique_clients
+
+http:
+  base_url: !secret http_base_url # the Home Assistant https url which is exposed to the internet.
+
+telegram_bot:
+  - platform: webhooks
+    api_key: !secret telegram_bot_api_key
+    parse_mode: markdown
+    allowed_chat_ids:
+      - !secret telegram_chat_id_1
