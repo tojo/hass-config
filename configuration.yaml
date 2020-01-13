@@ -35,7 +35,7 @@ sensor:
         icon_template: "mdi:clock"
         entity_id: homematic.ccu3
   - platform: pi_hole
-    host: localhost:4865
+    host: !secret pi-hole_host
     monitored_conditions:
       - ads_blocked_today
       - dns_queries_today
