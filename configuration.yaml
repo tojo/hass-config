@@ -34,12 +34,13 @@ sensor:
         value_template: "{{ state_attr('homematic.ccu3', 'V_Last_Reboot') or '01.01.1970 00:00:00' }}"
         icon_template: "mdi:clock"
         entity_id: homematic.ccu3
-  - platform: pi_hole
-    host: !secret pi-hole_host
-    monitored_conditions:
-      - ads_blocked_today
-      - dns_queries_today
-      - unique_clients
+
+pi_hole:
+  host: !secret pi-hole_host
+  monitored_conditions:
+    - ads_blocked_today
+    - dns_queries_today
+    - unique_clients
 
 http:
   base_url: !secret http_base_url # the Home Assistant https url which is exposed to the internet.
