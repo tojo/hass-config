@@ -54,5 +54,6 @@ telegram_bot:
 camera:
   - platform: foscam
     ip: !secret foscam_ip
+    port: !secret foscam_port
     username: !secret foscam_username
     password: !secret foscam_password
