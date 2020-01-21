@@ -1,0 +1,42 @@
+- cards:
+  path: emily
+  title: Emily
+  type: vertical-stack
+    - content: |
+        ## Emily's Zimmer
+      type: markdown
+    - cards:
+        - entities:
+            - entity: switch.oeq0126609_2
+              icon: 'mdi:ceiling-light'
+              tap_action:
+                action: toggle
+          show_name: false
+          show_state: false
+          type: glance
+        - entities:
+            - entity: switch.wandlicht_emily
+              icon: 'mdi:wall-sconce'
+              tap_action:
+                action: toggle
+          show_name: false
+          show_state: false
+          type: glance
+        - entities:
+            - entity: switch.bettlicht_emily
+              icon: 'mdi:bed-queen'
+              tap_action:
+                action: toggle
+          show_name: false
+          show_state: false
+          type: glance
+        - entities:
+            - entity: switch.schreibtischlampe_emily
+              icon: 'mdi:desk-lamp'
+              tap_action:
+                action: toggle
+          show_name: false
+          show_state: false
+          type: glance
+      type: horizontal-stack
+ 

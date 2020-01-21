@@ -1,0 +1,19 @@
+- badges: []
+  path: automation
+  title: Automatisierung
+  cards:
+    - entities:
+        - automation.espresso_um_6_00_uhr_werktags_an
+        - automation.alle_rolladen_bis_auf_essen_bei_sonnenaufgang_auf
+        - automation.espresso_um_8_00_uhr_werktags_aus
+        - automation.alle_rolladen_bis_auf_essen_bei_sonnenaufgang_zu
+        - automation.licht_emily_ambiente_toggle
+        - automation.rolladen_kuche_1_werktags_um_06_30_uhr_auf
+        - automation.licht_max_werktags_um_7_10_uhr_an
+        - automation.rolladen_kuche_1_um_23_00_uhr_zu
+        - automation.licht_max_werktags_um_7_45_uhr_aus
+        - automation.rolladen_kuche_nach_sonnenaufgang_auf
+        - automation.homematic_ccu_reboot
+        - automation.rolladen_kuche_nach_sonnenuntergang_zu
+      title: Automatisierung
+      type: entities

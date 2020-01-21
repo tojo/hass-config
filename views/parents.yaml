@@ -1,0 +1,17 @@
+- badges: []
+  path: parents
+  title: Eltern
+  cards:
+    - entities:
+        - entity: switch.kickr_core
+          icon: 'mdi:bike'
+          tap_action:
+            action: toggle
+        - entity: switch.canton_eltern
+          icon: 'mdi:speaker'
+          tap_action:
+            action: toggle
+      show_name: false
+      show_state: false
+      title: Eltern
+      type: glance

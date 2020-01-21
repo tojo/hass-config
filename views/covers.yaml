@@ -1,0 +1,15 @@
+- badges: []
+  path: covers
+  title: Rolläden
+  cards:
+    - entities:
+        - cover.eg_wohnen_bi_1
+        - cover.og_emily_bi_1
+        - cover.eg_waschen_bi_1
+        - cover.og_emily_bi_2
+        - cover.eg_wohnen_bi_2
+        - cover.og_max_bi_1
+        - cover.og_max_bi_2
+      title: Abdeckung
+      type: entities
+  

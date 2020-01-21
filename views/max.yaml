@@ -1,0 +1,20 @@
+- badges: []
+  path: max
+  title: Max
+  cards:
+    - entities:
+        - entity: switch.bettlicht
+        - entity: switch.bettlicht_2
+        - entity: switch.fernseherlicht
+        - entity: switch.wandlicht
+        - entity: switch.verstarker
+      show_header_toggle: true
+      title: Licht Max
+      type: entities
+    - entities:
+        - switch.aquarium_co2
+        - switch.aquarium_licht
+      show_header_toggle: true
+      title: Aquarium Max
+      type: entities
+

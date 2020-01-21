@@ -1,0 +1,11 @@
+- badges: []
+  cards:
+    - entity: media_player.sofia
+      type: media-control
+    - entity: media_player.65pus8102_12
+      type: media-control
+    - entity: media_player.eltern
+      type: media-control
+  panel: false
+  path: media
+  title: Media
