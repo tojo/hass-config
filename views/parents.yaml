@@ -3,7 +3,7 @@
   title: Eltern
   cards:
     - entities:
-        - entity: switch.kickr_core
+        - entity: switch.kickr
           icon: 'mdi:bike'
           tap_action:
             action: toggle

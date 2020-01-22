@@ -3,11 +3,11 @@
   title: Wohnzimmer
   cards:
     - entities:
-        - entity: switch.eg_wohnen_sw_1_1
+        - entity: switch.licht_wohnzimmer_1
           icon: 'mdi:ceiling-light'
           tap_action:
             action: toggle
-        - entity: switch.eg_wohnen_sw_1_2
+        - entity: switch.licht_wohnzimmer_2
           icon: 'mdi:sofa'
           tap_action:
             action: toggle

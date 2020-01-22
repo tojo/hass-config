@@ -3,13 +3,13 @@
   title: Rolläden
   cards:
     - entities:
-        - cover.eg_wohnen_bi_1
-        - cover.og_emily_bi_1
-        - cover.eg_waschen_bi_1
-        - cover.og_emily_bi_2
-        - cover.eg_wohnen_bi_2
-        - cover.og_max_bi_1
-        - cover.og_max_bi_2
+        - cover.rolladen_wohnzimmer_links
+        - cover.rolladen_wohnzimmer_rechts
+        - cover.rolladen_hauswirtschaftsraum
+        - cover.rolladen_emily_links
+        - cover.rolladen_emily_rechts
+        - cover.rolladen_max_links
+        - cover.rolladen_max_rechts
       title: Abdeckung
       type: entities
   

@@ -14,19 +14,6 @@
         - light.hue_color_lamp_1
       title: Licht
       type: entities
-    - entities:
-        - entity: switch.tasmota_b0d4b5
-        - entity: switch.tasmota_802de2
-        - entity: switch.tasmota_b0d713
-        - entity: switch.tasmota_d5ba15
-        - entity: switch.tasmota_b1b998
-        - entity: switch.peq0468501
-        - entity: switch.peq0468614
-        - entity: switch.dg_tv_sw_1
-        - entity: switch.dg_flur_sw_1_1
-        - entity: switch.dg_flur_sw_1_2
-      title: Schalter
-      type: entities
     - aspect_ratio: 50%
       camera_image: camera.foscam_camera
       entity: camera.foscam_camera

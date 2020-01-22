@@ -10,7 +10,7 @@
     - type: horizontal-stack
       cards:
       - entities:
-          - entity: switch.oeq0126609_2
+          - entity: switch.licht_emily_zimmer_1
             icon: 'mdi:ceiling-light'
             tap_action:
               action: toggle
