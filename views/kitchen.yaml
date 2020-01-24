@@ -1,6 +1,7 @@
 - badges: []
   path: kitchen
   title: Küche
+  index: 1
   cards:
     - entities:
         - entity: switch.kuchenlicht
