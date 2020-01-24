@@ -4,10 +4,11 @@
   index: 0
   cards:
     - entities:
-        - entity: switch.weihnachtsbeleuchtung_treppe_eg
-        - entity: switch.weihnachtsbeleuchtung_treppenhaus_og
+        - entity: switch.weihnachtsbeleuchtung_treppenhaus
+        - entity: switch.treppenhaus_dachgeschoss_1
+        - entity: switch.treppenhaus_dachgeschoss_2
       show_header_toggle: true
-      title: Weihnachtsbeleuchtung
+      title: Treppenhaus
       type: entities
     - entities:
         - light.hue_color_lamp_3
@@ -22,12 +23,6 @@
     - entity: weather.home
       type: weather-forecast
     - entities:
-        - entity: cover.rolladen_wohnzimmer_links
-        - entity: cover.rolladen_wohnzimmer_rechts
         - entity: cover.rolladen_hauswirtschaftsraum
-        - entity: cover.rolladen_emily_links
-        - entity: cover.rolladen_emily_rechts
-        - entity: cover.rolladen_max_links
-        - entity: cover.rolladen_max_rechts
       title: Abdeckung
       type: entities

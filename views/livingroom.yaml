@@ -2,20 +2,54 @@
   path: livingroom
   title: Wohnzimmer
   cards:
-    - entities:
-        - entity: switch.licht_wohnzimmer_1
-          icon: 'mdi:ceiling-light'
-          tap_action:
-            action: toggle
-        - entity: switch.licht_wohnzimmer_2
-          icon: 'mdi:sofa'
-          tap_action:
-            action: toggle
-        - entity: switch.mond_licht
-          icon: 'mdi:moon-waning-crescent'
-          tap_action:
-            action: toggle
-      show_name: false
-      show_state: false
-      title: Lichter Wohnzimmer
-      type: glance
+    - type: vertical-stack
+      cards:
+        - type: markdown
+          content: |
+            ## Wohnzimmer
+    - type: horizontal-stack
+      cards:
+      - entities:
+          - entity: switch.licht_wohnzimmer_1
+            icon: 'mdi:ceiling-light'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.licht_wohnzimmer_2
+            icon: 'mdi:sofa'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.mond_licht
+            icon: 'mdi:moon-waning-crescent'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.cocoon
+            icon: 'mdi:cctv'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+    - type: horizontal-stack
+      cards:
+      - entities:
+          - entity: cover.rolladen_wohnzimmer_links
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: cover.rolladen_wohnzimmer_rechts
+        show_name: false
+        show_state: false
+        type: glance

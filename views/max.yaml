@@ -80,8 +80,10 @@
       - entities:
           - entity: cover.rolladen_max_links
         show_name: false
+        show_state: false
         type: glance
       - entities:
           - entity: cover.rolladen_max_rechts
         show_name: false
+        show_state: false
         type: glance
