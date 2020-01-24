@@ -40,6 +40,7 @@ sensor:
 
 pi_hole:
   host: !secret pi-hole_host
+  api_key: ""
 
 telegram_bot:
   - platform: polling
