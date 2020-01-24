@@ -7,6 +7,7 @@
         - entity: switch.weihnachtsbeleuchtung_treppenhaus
         - entity: switch.treppenhaus_dachgeschoss_1
         - entity: switch.treppenhaus_dachgeschoss_2
+        - entity: switch.licht_bad_kinder
       show_header_toggle: true
       title: Treppenhaus
       type: entities
