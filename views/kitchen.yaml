@@ -27,7 +27,7 @@
         type: glance
       - entities:
           - entity: switch.espresso_maschine
-            icon: 'mdi:offee-maker'
+            icon: 'mdi:coffee-maker'
             tap_action:
               action: toggle
         show_name: false
