@@ -38,3 +38,66 @@
       show_state: false
       title: Canton
       type: glance
+
+
+- badges: []
+  path: kitchen
+  title: Küche
+  cards:
+    - type: vertical-stack
+      cards:
+        - type: markdown
+          content: |
+            ## Küche & Esszimmer
+    - type: horizontal-stack
+      cards:
+      - entities:
+          - entity: switch.kuchenlicht
+            icon: 'mdi:water-pump'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: light.vitrine
+            icon: 'mdi:bottle-wine'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.espresso_maschine
+            icon: 'mdi:offee-maker'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.espresso_muhle
+            icon: 'mdi:filter'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+    - type: horizontal-stack
+      cards:
+      - entities:
+          - entity: switch.canton_kuche_links
+            icon: 'mdi:speaker'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.canton_kuche_rechts
+            icon: 'mdi:speaker'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
