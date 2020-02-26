@@ -1,6 +1,7 @@
 - badges: []
   path: automation
   title: Automatisierung
+  visible: false
   cards:
     - entities:
         - automation.espresso_um_6_00_uhr_werktags_an

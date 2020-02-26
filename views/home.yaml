@@ -1,12 +1,13 @@
 - badges: []
   path: default_view
   title: Home
-  index: 0
   cards:
     - entities:
         - entity: switch.weihnachtsbeleuchtung_treppenhaus
         - entity: switch.treppenhaus_dachgeschoss_1
         - entity: switch.treppenhaus_dachgeschoss_2
+        - entity: switch.treppenhaus_oberschoss_1
+        - entity: switch.treppenhaus_oberschoss_2
         - entity: switch.licht_bad_kinder
       show_header_toggle: true
       title: Treppenhaus
