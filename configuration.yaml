@@ -38,10 +38,6 @@ sensor:
         icon_template: "mdi:clock"
         entity_id: homematic.ccu3
 
-pi_hole:
-  host: !secret pi-hole_host
-  api_key: ""
-
 telegram_bot:
   - platform: polling
     api_key: !secret telegram_bot_api_key
