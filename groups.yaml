@@ -53,3 +53,11 @@ xmas:
   name: Weihnachtsbeleuchtung
   entities:
   - switch.weihnachtsbeleuchtung_treppenhaus
+garden:
+  name: Garten
+  entities:
+  - switch.garten_beleuchtung
+  - switch.brunnen_pumpe
+  - switch.rasensprenger
+  - switch.wasser_schuppen
+  - switch.terrassen_steckdose
