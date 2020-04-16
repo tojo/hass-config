@@ -13,9 +13,10 @@ eg_kueche_espresso:
 eg_wohnzimmer:
   name: Wohnzimmer
   entities:
-  - switch.eg_wohnen_sw_1_1 # Licht Wohnzimmer Mitte
-  - switch.eg_wohnen_sw_1_2 # Licht Wohnzimmer Sesselecke
+  - switch.licht_wohnzimmer_1 # Licht Wohnzimmer Mitte
+  - switch.licht_wohnzimmer_2 # Licht Wohnzimmer Sesselecke
   - switch.mond_licht
+  - light.vitrine
 og_max_aquarium:
   name: Aquarium Max
   entities:
@@ -31,25 +32,24 @@ og_max_licht:
 og_max:
   name: Max
   entities:
-  - switch.verstaerker
+  - switch.verstarker
 og_emily_licht_ambiente:
   name: Licht Emily Ambiente
   entities:
-  - switch.oeq0126609_1     # Licht Emily Wand etc
+  - switch.licht_emily_zimmer_1
   - switch.wandlicht_emily
   - switch.bettlicht_emily
   - switch.schreibtischlampe_emily
 og_emily_licht_zimmer:
   name: Licht Emily Zimmer
   entities:
-  - switch.oeq0126609_2     # Licht Emily Zimmer
+  - switch.licht_emily_zimmer_2
 dg_eltern:
   name: Eltern
   entities:
-  - switch.kickr_core
   - switch.canton_eltern
+  - switch.licht_schlafzimmer
 xmas:
   name: Weihnachtsbeleuchtung
   entities:
-  - switch.weihnachtsbeleuchtung_treppe_eg
-  - switch.weihnachtsbeleuchtung_treppenhaus_og
+  - switch.weihnachtsbeleuchtung_treppenhaus
