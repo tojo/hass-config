@@ -18,14 +18,6 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.wandlicht_emily
-            icon: 'mdi:wall-sconce'
-            tap_action:
-              action: toggle
-        show_name: false
-        show_state: false
-        type: glance
-      - entities:
           - entity: switch.bettlicht_emily
             icon: 'mdi:bed-queen'
             tap_action:

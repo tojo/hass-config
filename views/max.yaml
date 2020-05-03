@@ -34,8 +34,8 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.fernseherlicht
-            icon: 'mdi:monitor'
+          - entity: switch.schreibtischlicht_max
+            icon: 'mdi:desk-lamp'
             tap_action:
               action: toggle
         show_name: false
