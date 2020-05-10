@@ -1,11 +1,32 @@
-- id: telegram_ping_pong_bot
-  alias: 'Telegram bot that reply pong to ping'
+- id: telegram_open_shutter
+  alias: 'Telegram bot that opens the shutter'
   trigger:
     platform: event
     event_type: telegram_command
     event_data:
-      command: '/ping'
+      command: '/open'
   action:
     - service: notify.telegram_bot
       data:
-        message: 'pong'
+        message: 'open'
+    - service: homematic.virtualkey
+      data:
+        address: Somfy
+        channel: 1
+        param: OPEN
+- id: telegram_close_shutter
+  alias: 'Telegram bot that closes the shutter'
+  trigger:
+    platform: event
+    event_type: telegram_command
+    event_data:
+      command: '/close'
+  action:
+    - service: notify.telegram_bot
+      data:
+        message: 'close'
+    - service: homematic.virtualkey
+      data:
+        address: Somfy
+        channel: 1
+        param: CLOSE
