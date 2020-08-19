@@ -1,8 +1,6 @@
 eg_kueche:
   name: Küche
   entities:
-  - switch.canton_kuche_links
-  - switch.canton_kuche_rechts
   - switch.kuchenlicht
   - light.vitrine
 eg_kueche_espresso:
@@ -16,12 +14,10 @@ eg_wohnzimmer:
   - switch.licht_wohnzimmer_1 # Licht Wohnzimmer Mitte
   - switch.licht_wohnzimmer_2 # Licht Wohnzimmer Sesselecke
   - switch.mond_licht
-  - light.vitrine
 og_max_aquarium:
   name: Aquarium Max
   entities:
   - switch.aquarium_co2
-  - switch.aquarium_licht
 og_max_licht:
   name: Licht Max
   entities:
@@ -44,15 +40,21 @@ og_emily_licht_zimmer:
   name: Licht Emily Zimmer
   entities:
   - switch.licht_emily_zimmer_2
+  - switch.schreibtischlampe_emily
+  - switch.bettlicht_emily
 dg_eltern:
   name: Eltern
   entities:
   - switch.canton_eltern
   - switch.licht_schlafzimmer
-xmas:
-  name: Weihnachtsbeleuchtung
+staircase:
+  name: Treppenhause
   entities:
   - switch.weihnachtsbeleuchtung_treppenhaus
+  - switch.treppenhaus_oberschoss_1
+  - switch.treppenhaus_oberschoss_2
+  - switch.treppenhaus_dachgeschoss_1
+  - switch.treppenhaus_dachgeschoss_2 
 garden:
   name: Garten
   entities:
@@ -61,3 +63,5 @@ garden:
   - switch.rasensprenger
   - switch.wasser_schuppen
   - switch.terrassen_steckdose
+  - switch.terrassenlicht
+  - switch.gabionen_licht
