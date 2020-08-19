@@ -1,10 +1,16 @@
 - badges: []
   cards:
-    - entity: media_player.sofia
+    - entity: media_player.bedroom
       type: media-control
-    - entity: media_player.65pus8102_12
+    - entity: media_player.kitchen
       type: media-control
-    - entity: media_player.eltern
+    - entity: media_player.unnamed_room
+      type: media-control
+    - entity: media_player.unnamed_room_2
+      type: media-control
+    - entity: media_player.unnamed_room_3
+      type: media-control
+    - entity: media_player.unnamed_room_4
       type: media-control
   panel: false
   path: media
