@@ -1,44 +1,44 @@
 - badges: []
-  path: kitchen
-  title: Küche
-  icon: mdi:food-fork-drink
+  path: garden
+  title: Garten
+  icon: mdi:flower
   cards:
     - type: vertical-stack
       cards:
         - type: markdown
           content: |
-            ## Küche & Esszimmer
+            ## Garten
     - type: horizontal-stack
       cards:
       - entities:
-          - entity: switch.kuchenlicht
+          - entity: switch.terrassenlicht
+            icon: 'mdi:palm-tree'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.gabionen_licht
+            icon: 'mdi:wall'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.wasser_schuppen
+            icon: 'mdi:water'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.brunnen_pumpe
             icon: 'mdi:water-pump'
             tap_action:
               action: toggle
         show_name: false
         show_state: false
-        type: glance
-      - entities:
-          - entity: light.vitrine
-            icon: 'mdi:bottle-wine'
-            tap_action:
-              action: toggle
-        show_name: false
-        show_state: false
-        type: glance
-      - entities:
-          - entity: switch.espresso_maschine
-            icon: 'mdi:coffee-maker'
-            tap_action:
-              action: toggle
-        show_name: false
-        show_state: false
-        type: glance
-      - entities:
-          - entity: switch.espresso_muhle
-            icon: 'mdi:filter'
-            tap_action:
-              action: toggle
-        show_name: false
-        show_state: false
-        type: glance
+        type: glance  

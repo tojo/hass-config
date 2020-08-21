@@ -1,17 +1,18 @@
 - badges: []
-  cards:
-    - entity: media_player.bedroom
-      type: media-control
-    - entity: media_player.kitchen
-      type: media-control
-    - entity: media_player.unnamed_room
-      type: media-control
-    - entity: media_player.unnamed_room_2
-      type: media-control
-    - entity: media_player.unnamed_room_3
-      type: media-control
-    - entity: media_player.unnamed_room_4
-      type: media-control
-  panel: false
   path: media
-  title: Media
+  title: Medien
+  icon: mdi:speaker
+  cards:
+    - type: vertical-stack
+      cards:
+        - type: markdown
+          content: |
+            ## Sonos & Medien
+    - type: horizontal-stack
+      cards:
+      - entities:
+          - entity: media_player.kitchen
+        type: media-control
+      - entities:
+          - entity: media_player.bedroom
+        type: media-control
