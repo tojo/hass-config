@@ -27,8 +27,24 @@
         show_state: false
         type: glance
       - entities:
+          - entity: switch.sprinkler_sprinkler
+            icon: 'mdi:checkbox-blank-circle-outline'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.viereckregner_viereckregner
+            icon: 'mdi:checkbox-blank-outline'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
           - entity: switch.wasser_schuppen
-            icon: 'mdi:water'
+            icon: 'mdi:water-pump'
             tap_action:
               action: toggle
         show_name: false
@@ -36,7 +52,15 @@
         type: glance
       - entities:
           - entity: switch.brunnen_pumpe
-            icon: 'mdi:water-pump'
+            icon: 'mdi:water-well'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance  
+      - entities:
+          - entity: switch.rasensprenger
+            icon: 'mdi:water'
             tap_action:
               action: toggle
         show_name: false
