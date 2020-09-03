@@ -7,7 +7,7 @@
       cards:
         - type: markdown
           content: |
-            ## Garten
+            ## Garten Licht
     - type: horizontal-stack
       cards:
       - entities:
@@ -61,6 +61,60 @@
       - entities:
           - entity: switch.rasensprenger
             icon: 'mdi:water'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance  
+    - type: vertical-stack
+      cards:
+        - type: markdown
+          content: |
+            ## Garten Bewässerung
+    - type: horizontal-stack
+      cards:
+      - entities:
+          - entity: switch.rasensprenger
+            icon: 'mdi:water'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance  
+      - entities:
+          - entity: switch.sprinkler_sprinkler
+            icon: 'mdi:checkbox-blank-circle-outline'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.viereckregner_viereckregner
+            icon: 'mdi:checkbox-blank-outline'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+    - type: vertical-stack
+      cards:
+        - type: markdown
+          content: |
+            ## Wasser Schuppen
+    - type: horizontal-stack
+      cards:
+      - entities:
+          - entity: switch.wasser_schuppen
+            icon: 'mdi:water-pump'
+            tap_action:
+              action: toggle
+        show_name: false
+        show_state: false
+        type: glance
+      - entities:
+          - entity: switch.brunnen_pumpe
+            icon: 'mdi:water-well'
             tap_action:
               action: toggle
         show_name: false
