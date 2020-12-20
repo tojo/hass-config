@@ -11,7 +11,7 @@
     - type: horizontal-stack
       cards:
       - entities:
-          - entity: switch.terrassenlicht
+          - entity: light.terrassenlicht
             icon: 'mdi:palm-tree'
             tap_action:
               action: toggle
@@ -19,7 +19,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.gabionen_licht
+          - entity: light.gabionen_licht
             icon: 'mdi:wall'
             tap_action:
               action: toggle

@@ -11,7 +11,7 @@
     - type: horizontal-stack
       cards:
       - entities:
-          - entity: switch.kuchenlicht
+          - entity: light.kuchenlicht
             icon: 'mdi:water-pump'
             tap_action:
               action: toggle
