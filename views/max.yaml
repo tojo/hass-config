@@ -34,7 +34,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: light.schreibtischlicht_max
+          - entity: light.schreibtisch_licht
             icon: 'mdi:desk-lamp'
             tap_action:
               action: toggle
