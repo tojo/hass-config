@@ -10,7 +10,7 @@
     - type: horizontal-stack
       cards:
       - entities:
-          - entity: switch.wandlicht
+          - entity: light.wandlicht
             icon: 'mdi:wall-sconce'
             tap_action:
               action: toggle
@@ -18,7 +18,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.bettlicht_2
+          - entity: light.bettlicht_2
             icon: 'mdi:wall-sconce'
             tap_action:
               action: toggle
@@ -26,7 +26,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.bettlicht
+          - entity: light.bettlicht
             icon: 'mdi:bed-queen'
             tap_action:
               action: toggle
@@ -34,7 +34,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.schreibtischlicht_max
+          - entity: light.schreibtischlicht_max
             icon: 'mdi:desk-lamp'
             tap_action:
               action: toggle
@@ -68,7 +68,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.fernseherlicht
+          - entity: light.fernseherlicht
             icon: 'mdi:monitor'
             tap_action:
               action: toggle
