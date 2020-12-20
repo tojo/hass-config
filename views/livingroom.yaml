@@ -26,7 +26,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.mond_licht
+          - entity: light.mond_licht
             icon: 'mdi:moon-waning-crescent'
             tap_action:
               action: toggle
@@ -34,7 +34,7 @@
         show_state: false
         type: glance
       - entities:
-          - entity: switch.sideboard
+          - entity: light.sideboard
             icon: 'mdi:bottle-wine'
             tap_action:
               action: toggle
