@@ -32,7 +32,7 @@
             show_state: false
             type: glance
           - entities:
-              - entity: switch.mond_licht
+              - entity: light.mond_licht
                 icon: 'mdi:moon-waning-crescent'
                 tap_action:
                   action: toggle
@@ -45,7 +45,7 @@
             content: |
               ## Küche
           - entities:
-              - entity: switch.kuchenlicht
+              - entity: light.kuchenlicht
                 icon: 'mdi:water-pump'
                 tap_action:
                   action: toggle
