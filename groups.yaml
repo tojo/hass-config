@@ -45,7 +45,7 @@ dg_eltern:
 staircase:
   name: Treppenhause
   entities:
-  - switch.weihnachtsbeleuchtung_treppenhaus
+  - light.weihnachtsbeleuchtung_treppenhaus
   - switch.treppenhaus_oberschoss_1
   - switch.treppenhaus_oberschoss_2
   - switch.treppenhaus_dachgeschoss_1
