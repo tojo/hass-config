@@ -3,7 +3,7 @@
   title: Home
   cards:
     - entities:
-        - entity: switch.weihnachtsbeleuchtung_treppenhaus
+        - entity: light.weihnachtsbeleuchtung_treppenhaus
         - entity: switch.treppenhaus_dachgeschoss_1
         - entity: switch.treppenhaus_dachgeschoss_2
         - entity: switch.treppenhaus_oberschoss_1
