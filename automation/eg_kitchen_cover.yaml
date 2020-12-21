@@ -17,7 +17,7 @@
 
 - id: Rolladen_Küche_1_um_23_Uhr_zu
   alias: 'Rolladen Küche 1 um 23:00 Uhr zu'
-  initial_state: 'on'
+  initial_state: 'off'
   trigger:
       platform: time
       at: "23:00"
