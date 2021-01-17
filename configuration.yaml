@@ -9,13 +9,13 @@ homeassistant:
   unit_system: !secret unit_system
   time_zone: !secret time_zone
 
-group: !include groups.yaml
-automation: !include_dir_merge_list automation/
-script: !include scripts.yaml
-scene: !include scenes.yaml
+#group: !include groups.yaml
+#automation: !include_dir_merge_list automation/
+#script: !include scripts.yaml
+#scene: !include scenes.yaml
 
-lovelace:
-  mode: yaml
+#lovelace:
+#  mode: yaml
 
 homematic:
   interfaces:

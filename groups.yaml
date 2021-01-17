@@ -14,6 +14,7 @@ eg_wohnzimmer:
   - switch.licht_wohnzimmer_1 # Licht Wohnzimmer Mitte
   - switch.licht_wohnzimmer_2 # Licht Wohnzimmer Sesselecke
   - light.mond_licht
+  - light.sideboard
 og_max_aquarium:
   name: Aquarium Max
   entities:
